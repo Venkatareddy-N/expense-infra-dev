@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "venkatswan"                #s3-bucket name
-    key            = "expense-infra-dev-vpc" # every repo should have unique S3-key
+    bucket         = "venkatswan"            #s3-bucket name
+    key            = "expense-infra-dev-backend" # every repo should have unique S3-key
     region         = "us-east-1"
     dynamodb_table = "venkat-db" # dynamoDB table name
   }

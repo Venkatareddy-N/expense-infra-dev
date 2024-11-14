@@ -1,5 +1,5 @@
 module "vpc" {
-  source                = "git::https://github.com/venkatswan/terraform-aws-vpc.git?ref=main"
+  source                = "git::https://github.com/venkatareddy-n/terraform-aws-vpc.git?ref=main"
   project_name          = var.project_name #these variable values given in variable.tf file you can give directly also project_name = "expense"
   environment           = var.environment
   common_tags           = var.common_tags

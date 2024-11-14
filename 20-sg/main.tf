@@ -1,7 +1,7 @@
 #this file is creating all security groups and allow ports
 #creating mysql security group just group using existing module
 module "mysql_sg" {
-  source       = "git::https://github.com/venkatswan/terraform-aws-security-group.git?ref=main"
+  source       = "git::https://github.com/venkatareddy-n/terraform-aws-security-group.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   sg_name      = "mysql"
@@ -11,7 +11,7 @@ module "mysql_sg" {
 }
 #creating backend security group
 module "backend_sg" {
-  source       = "git::https://github.com/venkatswan/terraform-aws-security-group.git?ref=main"
+  source       = "git::https://github.com/venkatareddy-n/terraform-aws-security-group.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   sg_name      = "backend"
@@ -21,7 +21,7 @@ module "backend_sg" {
 }
 #creating frontend security group
 module "frontend_sg" {
-  source       = "git::https://github.com/venkatswan/terraform-aws-security-group.git?ref=main"
+  source       = "git::https://github.com/venkatareddy-n/terraform-aws-security-group.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   sg_name      = "frontend"
@@ -31,7 +31,7 @@ module "frontend_sg" {
 }
 #creating bastion security group
 module "bastion_sg" {
-  source       = "git::https://github.com/venkatswan/terraform-aws-security-group.git?ref=main"
+  source       = "git::https://github.com/venkatareddy-n/terraform-aws-security-group.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   sg_name      = "bastion"
@@ -42,7 +42,7 @@ module "bastion_sg" {
 
 #creating ansible security group
 module "ansible_sg" {
-  source       = "git::https://github.com/venkatswan/terraform-aws-security-group.git?ref=main"
+  source       = "git::https://github.com/venkatareddy-n/terraform-aws-security-group.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   sg_name      = "ansible"
@@ -52,7 +52,7 @@ module "ansible_sg" {
 }
 #creating security group for application load balancer
 module "app_alb_sg" {
-  source       = "git::https://github.com/daws-81s/terraform-aws-security-group.git?ref=main"
+  source       = "git::https://github.com/venkatareddy-n/terraform-aws-security-group.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   sg_name      = "app-alb" #expense-dev-app-alb
@@ -63,7 +63,7 @@ module "app_alb_sg" {
 
 #creating security group for vpn
 module "vpn_sg" {
-  source       = "git::https://github.com/daws-81s/terraform-aws-security-group.git?ref=main"
+  source       = "git::https://github.com/venkatareddy-n/terraform-aws-security-group.git?ref=main"
   project_name = var.project_name
   environment  = var.environment
   sg_name      = "vpn" #expense-dev-app-alb

@@ -9,7 +9,7 @@ terraform {
     bucket         = "venkatswan"            #s3-bucket name
     key            = "expense-infra-dev-rds" # every repo should have unique S3-key
     region         = "us-east-1"
-    dynamodb_table = "venkatswan-db" # dynamoDB table name
+    dynamodb_table = "venkat-db" # dynamoDB table name
   }
 }
 
